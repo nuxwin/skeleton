@@ -3,12 +3,12 @@
 /**
  * Implements iMSCP_Api_Modules_Adapter_Storage_Interface SQL storage
  */
-class iMSCP_Api_Modules_Adapter_Storage_Proftpd_AuthFiles implements iMSCP_Api_Modules_Adapter_Storage_Interface
+class iMSCP_Api_Modules_Adapter_Storage_Proftpd_AuthFiles implements iMSCP_Api_Modules_Ftp_Backend_Adapter_Storage_Interface
 {
 	/**
 	 * Create the given Ftp account entry
 	 */
-	public function createConfigEntry(iMSCP_API_Modules_Ftp_Models_User $user);
+	public function createConfigEntry(iMSCP_API_Modules_Ftp_Models_User $user)
 	{
 		$perlWrapper = new iMSCP_PerlConffileEditor();
 		$perlWrapper->createConfigEntry('proftpd', serialize($user));

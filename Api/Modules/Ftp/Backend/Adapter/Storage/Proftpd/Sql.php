@@ -11,7 +11,7 @@ class iMSCP_Api_Modules_Ftp_Backend_Adapter_Storage_Proftpd_Sql implements iMSCP
 	/**
 	 * Create the given Ftp account entry
 	 */
-	public function createConfigEntry(iMSCP_API_Modules_Ftp_Models_User $user);
+	public function createConfigEntry(iMSCP_API_Modules_Ftp_Models_User $user)
 	{
 		// Do something only if SQL storage is different than iMSCP master storage
 	}
