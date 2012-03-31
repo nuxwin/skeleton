@@ -3,7 +3,7 @@
 /**
  * Ftp user model class
  */
-class iMSCP_Api_Modules_Ftp_Model_Group
+class iMSCP_Api_Modules_Ftp_Models_Group
 {
 
 }

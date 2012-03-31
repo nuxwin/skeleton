@@ -40,10 +40,10 @@ class iMSCP_Api_Modules_Ftp_Api extends iMSCP_Api_Dispatcher_Dispatcheable
 	/**
 	 * Delete an FTP user account
 	 *
-	 * @param iMSCP_API_Modules_Ftp_Model_User $ftpUserId
+	 * @param int $ftpUserId
 	 * @return iMSCP_Api_Dispatcher_Response
 	 */
-	public function deleteFtpUser(iMSCP_API_Modules_Ftp_Model_User $ftpUserId)
+	public function deleteFtpUser( $ftpUserId)
 	{
 		// onBeforeDeleteFtpUser
 
